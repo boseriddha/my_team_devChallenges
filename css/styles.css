@@ -1,7 +1,11 @@
+/* Boilerplate styles */
+
 * {
     font-family: "Poppins", sasns-serif;
     font-size: 16px;
 }
+
+/* Accessibility */
 
 .sr-only {
     border: 0;
@@ -15,31 +19,82 @@
     width: 1px; 
 } 
 
-.page-heading {
-    font-family: "PT Serif", serif;
-    font-size: 2.25rem;
-    font-weight: 700;
-    /* margin-right: 7.5vw; */
-}
+/* Header styles */
 
-.page-description-heading {
-    font-size: 1.125rem;
-    font-weight: 600;
-}
+    /* Main heading styling */
+    .page-heading {
+        font-family: "PT Serif", serif;
+        font-size: 2.25rem;
+        font-weight: 700;
+        /* margin-right: 7.5vw; */
+    }
 
-.page-description {
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 27px;
-    width: 440px;
-}
+    /* Main description heading styling */
+    .page-description-heading {
+        font-size: 1.125rem;
+        font-weight: 600;
+    }
 
-.heading-and-description {
-    display: flex;
-    justify-content: center;
-    margin: 10vh auto 8.88vh auto;
-}
+    /* Description styling */
+    .page-description {
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 27px;
+        width: 440px;
+    }
 
-.page-description-div {
-    margin-left: 15vw;
-}
+    /* Positioning the heading and description */
+    .heading-and-description {
+        display: flex;
+        justify-content: center;
+        margin: 10vh auto 8.88vh auto;
+    }
+
+    /* Positioning the description and heading description div */
+    .page-description-div {
+        margin-left: 15vw;
+    }
+
+/* Grid styling */
+
+    /* Rotating the job titles */
+    .job-titles { 
+        display: block;
+        position: relative;
+        top: -34.67vh;
+        right: -12.84vw;
+        background: none;
+        transform-origin: 0 0;
+        transform: rotate(90deg); 
+        font-family: "PT Serif", serif;
+        font-weight: 400;
+        /*-- change this later --*/
+        /* display: none; */
+    }
+
+    /* Sizing the images */
+    .team-member {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 31.5vh;
+        aspect-ratio: 0.69;
+        margin: 0;
+    }
+
+    /* Sizing the div of an image */
+    .team-member-div {
+        width: 12.84vw;
+        height: 35.4vh;
+        margin: 10px;
+    }
+
+    /* Name of team member */
+    .name {
+        display: block;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        font-weight: 600;
+    }
