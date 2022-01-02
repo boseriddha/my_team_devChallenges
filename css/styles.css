@@ -30,7 +30,8 @@
         font-family: "PT Serif", serif;
         font-size: 2.25rem;
         font-weight: 700;
-        /* margin-right: 7.5vw; */
+        margin-right: 7.5vw;
+        /* margin-left: 7.5vw; */
     }
 
     /* Main description heading styling */
@@ -50,13 +51,16 @@
     /* Positioning the heading and description */
     .heading-and-description {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        align-content: center;
         margin: 10vh auto 8.88vh auto;
     }
 
     /* Positioning the description and heading description div */
     .page-description-div {
-        margin-left: 15vw;
+        margin-left: 6.5vw;
+        /* margin-right: 7.5vw; */
     }
 
 /* Styling Each Image*/
@@ -65,8 +69,8 @@
     .job-titles { 
         display: block;
         position: relative;
-        top: -34.67vh;
-        right: -12.84vw;
+        top: -340px;
+        right: -250px;
         background: none;
         transform-origin: 0 0;
         transform: rotate(90deg); 
@@ -90,6 +94,9 @@
     .team-member-div {
         width: 12.84vw;
         height: 35.4vh;
+        max-width: 250px;
+        max-height: 350px;
+        min-width: fit-content;
         /* margin: 10px; */
     }
 
@@ -110,7 +117,7 @@
         margin: auto 22%;
         grid-template-columns: repeat(3, 15vw);
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 2vw;
+        column-gap: 2vw;
         width: 65vw;
     }
 
@@ -131,4 +138,75 @@
 
     .credit, #username {
         color: #a9a9a9
+    }
+
+/* Mobile Screen Styling */
+
+    @media only screen and (max-width: 1300px) {
+        
+        body {
+            overflow: scroll;
+        }
+
+        /* Styling the header */
+        .heading-and-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-left: 3.2vw;
+        }
+
+        /* Styling the description */
+        .page-description-div {
+            margin: 3vh 0;
+        }
+
+        /* Styling the header */
+        .page-heading {
+            margin: 0;
+        }
+
+        /* Changing the settings of the grid container */
+        .grid-container {
+            display: grid;
+            grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        }
+
+        /* Fixing the Job Titles */
+        .job-titles {
+            font-size: 0.8125rem;
+        }
+
+        /* Fixing the individual margins */
+        .grid-item-1, .grid-item-3, .grid-item-5 {
+            margin: 15px 10px;
+        }
+
+        .grid-item-2, .grid-item-4, .grid-item-6 {
+            margin: 50px 10px;
+        }
+
+    }
+
+    @media only screen and (max-width: 800px) {
+
+        /* Fixing the grid settings */
+        .grid-container {
+            display: grid;
+            grid-template: repeat(6, 1fr) / 1fr;
+        }
+
+        /* Fixing the individual item's margins */
+        .grid-item-1, .grid-item-2, .grid-item-3, .grid-item-4, .grid-item-5, .grid-item-6 {
+            margin: 15px 0;
+        }
+        
+    }
+
+    @media only screen and (max-width: 1500px) {
+        /* Fixing column gap */
+        .grid-container {
+            display: grid;
+            column-gap: 5vw;
+        }
     }
