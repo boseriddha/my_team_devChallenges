@@ -1,23 +1,27 @@
 /* Boilerplate styles */
 
-* {
-    font-family: "Poppins", sasns-serif;
-    font-size: 16px;
-}
+    * {
+        font-family: "Poppins", sasns-serif;
+        font-size: 16px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
 
 /* Accessibility */
 
-.sr-only {
-    border: 0;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px; 
-} 
+    .sr-only {
+        border: 0;
+        clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+        clip: rect(1px, 1px, 1px, 1px);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px; 
+    } 
 
 /* Header styles */
 
@@ -55,7 +59,7 @@
         margin-left: 15vw;
     }
 
-/* Grid styling */
+/* Styling Each Image*/
 
     /* Rotating the job titles */
     .job-titles { 
@@ -86,7 +90,7 @@
     .team-member-div {
         width: 12.84vw;
         height: 35.4vh;
-        margin: 10px;
+        /* margin: 10px; */
     }
 
     /* Name of team member */
@@ -97,4 +101,23 @@
         left: 0;
         margin: 0;
         font-weight: 600;
+    }
+
+/* Creating the grid */
+    /* Grid Container Styling */
+    .grid-container {
+        display: inline-grid;
+        margin: auto 22%;
+        grid-template-columns: repeat(3, 15vw);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 2vw;
+        width: 65vw;
+    }
+
+    .grid-item-2 {
+        margin-top: 8vh;
+    }
+
+    .grid-item-5 {
+        margin-top: 10vh;
     }
