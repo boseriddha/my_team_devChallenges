@@ -114,10 +114,21 @@
         width: 65vw;
     }
 
+    /* Grid Item 2 */
     .grid-item-2 {
         margin-top: 8vh;
     }
 
+    /* Grid Item 3 */
     .grid-item-5 {
         margin-top: 10vh;
+    }
+
+/* Styling the footer */
+    footer {
+        text-align: center;
+    }
+
+    .credit, #username {
+        color: #a9a9a9
     }
